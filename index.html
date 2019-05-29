@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Laxx Project</title>
+		<link rel="stylesheet" href="/dist/css/main.min.css" />
+		<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<section class="intro">
+			<p class="scroll-text lax" data-lax-preset="slalom-40">
+				Scroll down and witness the magic
+			</p>
+		</section>
+
+		<section class="anim">
+			<h1 class="lax">Animation</h1>
+			<p class="desc lax">
+				Check out this nifty scroll animation with laxxx.js
+			</p>
+			<div class="boxes">
+				<div class="box1 lax" data-lax-preset="spinRev-78"></div>
+				<div class="box2 lax" data-lax-preset="swing-40"></div>
+				<div class="box3 lax" data-lax-preset="crazy driftRight"></div>
+			</div>
+		</section>
+
+		<section class="foot">
+			<h1>Good Bye</h1>
+			<div class="img-container">
+				<img
+					src="https://0okcww.bn.files.1drv.com/y4moNWe-G-LBR0hsdcKrCOJP6mvKqqoePx8mgIBemMhJfJbTRXHDmW7L2lvkL6YTE7vtZ2gWI2oUhqus_hcQ6h-GYuyw5yaSiUjRh0EyGGAmAFmPpLgB9mTj1hJ4bibmkle0Iwu7EM3-P0dsoDGsaVHcZcYskjnhHaxprL1G0V9ChRc0yecaoePjHN3W5Q6xFOtHlunOjaC4zKp6XJtNgTNCQ?width=1532&height=2048&cropmode=none"
+					alt="sample image"
+				/>
+				<img
+					src="https://3om3nw.bn.files.1drv.com/y4mNDvW68x12IzfQOiPB7_iw2JS-T9QzuhUplVxd3v7CQX8y8-Uenmshm77XBpVUybIZBIDfkqUhwz-nbNU3KvSvyyYYRmXSMKbIqXY5kkSi5ia0xciDss2F-UT4nSYTwrbpVQGvkSBG4-WVF8xNmtP-6i40MmC8vP0SItY3tQk1Wnqr7BYMAn0osvc_n3Z6hWytBTyuMuu_7NecJebR42_6Q?width=2160&height=2280&cropmode=none"
+					alt="sample image"
+				/>
+				<img src="https://source.unsplash.com/random" alt="sample image" />
+			</div>
+		</section>
+
+		<script src="node_modules/lax.js/lib/lax.min.js"></script>
+
+		<script>
+			window.onload = () => {
+				lax.setup();
+
+				document.addEventListener(
+					'scroll',
+					function(e) {
+						lax.update(window.scrollY);
+					},
+					false
+				);
+			};
+		</script>
+	</body>
+</html>
